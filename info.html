@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web sample cafe</title>
+</head>
+<link rel="stylesheet" href="./assets/css/style.css">
+<body>
+  <!--ヘッダー-->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__cat">
+        <div class="header__logo"><a href="#"></a></div>
+          <h1 class="header__title"><a href="index.html">Web sample cafe</a></h1>
+        </div>
+        <!--ハンバーガーメニュー-->
+          <input class="hamburger" type="checkbox" id="hamburger">
+          <label for="hamburger">
+            <span hamburger__icon>
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+          </label>
+            <!--ナビバー-->
+            <nav class="header__navi">
+              <div class="header__navi__warp">
+                <ul class="header__navi__list">
+                  <li class="header__navi__item"><a href="#commit-link"><span>こだわり</span></a></li>
+                  <li class="header__navi__item"><a href="#menu-link"><span>メニュー</span></a></li>
+                  <li class="header__navi__item"><a href="#service-link"><span>サービス</span></a></li>
+                  <li class="header__navi__item"><a href="#address-link"><span>アクセス</span></a></li>
+                  <li class="header__navi__item"><a href="#contact-link"><span>お問い合わせ</span></a></li>
+                </ul>
+              </div>
+            </nav>
+    </div>
+  </header>
+
+  <!--こだわり-->
+  <section class="container">
+    <main class="commit">
+      <div class="l-inner">
+        <div class="commit__cat">
+          <h2 class="commit__subTitle"><a id="commit-link">こだわりの一杯</a></h2>
+          <p class="commit__text">
+                当店では、原料にこだわりブラジル産のコーヒー豆を使用しています。<br>
+                口に入れた瞬間に鼻から抜けていく香りと、スッキリとした後味が特徴の一杯です。
+          </p>
+          <img class="commit__img" src="./assets/img/m-1.jpg" alt="commit">
+          
+          <!--コロナのお知らせ-->
+          <input class="modal-checkbox" type="checkbox" id="modalBox">
+          <label data-modal="trigger" for="modalBox"></label>
+          <section class="corona-modal">
+            <div class="corona-modal__overlay"></div>
+            <div class="corona-modal__content">
+              <div class="corona-modal__content__title">
+                <h3>当店のコロナ対策について</h3>
+              </div>
+              <div class="corona-modal__content__discription">
+                <p>
+                  当店では、お客様に安心して楽しんでいただけるようにコロナ対策にも力を入れています。<br><br>
+                  都道府県のガイドラインに沿った対策を実施し、お越しいただくお客様に安心してくつろいでいただける空間をご用意しています
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--メニュー-->
+  <section class="container">
+    <main class="menu">
+      <div class="l-inner">
+        <div class="menu__cat">
+          <h2 class="menu__subTitle"><a id="menu-link">メニュー</a></h2>
+          <div class="menu__area">
+            <ul class="menu__list">
+              <li class="menu__list__bread">
+                <img class="menu__list__img" src="./assets/img/m-5.jpg" alt="">
+                <div>
+                  <h3 class="menu__list__title">クロワッサン</h3>
+                  <p class="menu__list__text">当店の人気メニューです。自家製のバターをたっぷりと使用した一品で、食べる直前に温めることでバターの香りが楽しめます。</p>
+                </div>
+              </li>
+              <li class="menu__list__bread">
+                <img class="menu__list__img" src="./assets/img/m-4.jpg" alt="">
+                <div>
+                  <h3 class="menu__list__title">ドーナッツ</h3>
+                  <p class="menu__list__text">もちもちの生地と、毎朝手作りのクリームが自慢のドーナッツです。</p>
+                </div>
+              </li>
+              <li class="menu__list__bread">
+                <img class="menu__list__img" src="./assets/img/m-3.jpg" alt="bled">
+                <div>
+                  <h3 class="menu__list__title">いちごサンド</h3>
+                  <p class="menu__list__text">クロワッサン生地にたっぷりのイチゴと生クリームを使ったいちごサンドは、一度食べたらくせになる一品です。</p>
+                </div>
+              </li>
+              <li class="menu__list__bread">
+                <img class="menu__list__img" src="./assets/img/m-2.jpg" alt="coffee">
+                <div>
+                  <h3 class="menu__list__title">Black flowing ice</h3>
+                  <p class="menu__list__text">グラスに入れたバニラアイスに、当店自慢のコーヒーをそそぐ大人のデザート。アイスの甘味とコーヒーの苦味を堪能できる一品です。</p>
+                </div>  
+              </li>
+            </ul>  
+          </div>     
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--サービス-->
+  <section class="container">
+    <main class="service">
+      <div class="service__cat">
+        <h2 class="subTitle"><a id="service-link">サービス</a></h2>
+        <div class="service__info">
+          <img class="service__info__img" src="./assets/img/service.jpg" alt="service">
+          <div class="service__info__text">
+            <p>
+              サービスの一環として、当店ではコワーキングスペースとしての貸し出しサービスを行なっています。<br>
+              フリーランスの作業会やイベントでの使用も承っております。<br><br>
+              As part of the service, we offer a rental service as a coworking space.
+              We also accept use at freelance workshops and events.　<br><br>
+              <a class="service__info__link" href="#">
+                詳細はこちらからご確認ください<br>
+                Click here for details
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--アクセス-->
+  <section class="container">
+    <main class="address">
+      <div class="l-inner">
+        <div class="address__cat">
+          <div class="address__info">
+            <div class="address__info__text">
+              <h2 class="address__subTitle"><a id="address-link">アクセス</a></h2>
+              <div class="left__box">
+                <h3 class="address__area__title">Web sample cafe</h3>
+                <p class="address__add">
+                  〒 〇〇ー〇〇〇〇<br>　
+                  〇〇〇〇県　〇〇〇〇市〇〇55番地<br>
+                  <a href="#">Google map</a>
+                </p>
+                <dl class="address__area">
+                  <dt>お電話</dt>
+                  <dd class="address__area__tel"><a href="#">〇〇ー〇〇〇〇</a></dd>
+                </dl>
+                <dl class="address__area">
+                  <dt>営業時間</dt>
+                  <dd class="address__area__time">10：30〜19：00</dd>
+                </dl>
+                <dl class="address__area">
+                  <dt>定休日</dt>
+                  <dd class="address__area__holiday">水曜日・木曜日</dd>
+                </dl>
+              </div>
+            </div>
+            <img class="address__info__img" src="./assets/img/access.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--お問い合わせ-->
+  <section>
+    <main class="contact">
+      <div class="l-inner">
+        <div class="contact__cat">
+          <h2 class="subTitle"><a id="contact-link">お問い合わせ</a></h2>
+          <form action="#" method="POST">
+            <div class="contact__area">
+              <dl class="contact__item">
+                <dt class="contact__item__label"><label for="name" class="contact__label">お名前<span class="contact__item--red">*</span></label></dt>
+                <dd class="contact__item__input"><input type="text" id="name" value="" size="110" placeholder="おなまえ"></dd>
+              </dl>
+              <dl class="contact__item">
+                <dt class="contact__item__label"><label for="tel" class="contact__label">お電話番号<span class="contact__item--red">*</span></label></dt>
+                <dd class="contact__item__input"><input type="text" id="tel" value="" size="110" placeholder="〇〇ー〇〇〇〇"></dd>
+              </dl>
+              <dl class="contact__item">
+                <dt class="contact__item__label"><label for="email" class="contact__label">メールアドレス<span class="contact__item--red">*</span></label></dt>
+                <dd class="contact__item__input"><input type="text" id="email" value="" size="110" placeholder="〇〇@〇〇.com"></dd>
+              </dl>
+              <dl class="contact__item">
+                <dt><label for="textarea" class="cotact__label">お問い合わせ内容</label></dt>
+                <dd><textarea name="textarea" id="textarea" cols="109" rows="5" placeholder="お気軽にご連絡ください"></textarea></dd>
+              </dl>
+            </div>
+          </form>
+
+          <!--ボタン-->
+          <button class="contact__btn" type="submit" name="name" value="名前" >
+            <span>送信</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--フッター-->
+  <footer class="container">
+    <div class="footer__cat">
+      <ul class="fotter__list">
+        <li><a href="#"><img class="footer__list__item" src="./assets/img/face.jpeg" alt="facebook"></a></li>
+        <li><a href="#"><img class="footer__list__item" src="./assets/img/twii.jpeg" alt="Twitter"></a></li>
+        <li><a href="#"><img class="footer__list__item" src="./assets/img/yt.jpeg" alt="YouTube"></a></li>
+      </ul>
+      <p><small>&copy;2021 All Rights Reserved</small></p>
+    </div>
+  </footer>
+
+  <script>
+    $(function() {
+    //スムーズスクロール
+    let runScroll = function() {
+        $('a[href^="#"]').click(function() {
+            let speed = 400;
+            let href = $(this).attr("href");
+            let $target = $(href == "#" || href == "" ? 'html' : href);
+            let position = $target.offset().top - 100;
+            $('body,html').animate({
+                scrollTop: position
+            }, speed, 'swing');
+            return false;
+        });
+    };
+    // ハンバーガーメニューチェックボックス外す処理
+    let unlockCheckBox = function() {
+        let $trigger = $('.header__navi a');
+        let $target = $('input[type="checkbox"]');
+        $trigger.click(function() {
+            $target.prop('checked', false);
+        });
+    };
+    // Document Ready
+        runScroll();
+        unlockCheckBox();
+    });
+</script>
+</body>
+</html>
