@@ -97,8 +97,16 @@ ul + p {
   margin: 30px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__cat {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
 .header {
   width: 100%;
+  height: 100px;
 }
 
 .header__wrap {
@@ -129,7 +137,7 @@ ul + p {
 }
 
 .header__logo {
-  background: url(https://github.com/ryoma-kurenai/process-of-growing-sample-cafe/blob/main/logo.jpeg?raw=true);
+  background: url(../../assets/img/コーヒーブレイクアイコン.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 45px;
@@ -152,7 +160,6 @@ ul + p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 1000;
 }
 
 .header__navi__item {
@@ -207,10 +214,11 @@ ul + p {
 }
 
 .commit__subTitle {
+  display: inline-block;
   font-size: 2.5em;
   font-family: fantasy;
   margin-left: 24px;
-  padding: 100px 50px 50px 50px;
+  padding: 30px 50px 50px 50px;
   position: relative;
 }
 
@@ -220,8 +228,8 @@ ul + p {
   border-bottom: 2px solid;
   width: 27px;
   height: 2px;
-  left: 5.5%;
-  top: 88%;
+  left: 14.5%;
+  top: 65%;
 }
 
 /*モーダル・コロナ*/
@@ -244,7 +252,7 @@ ul + p {
 }
 
 .modal-checkbox:checked ~ [data-modal="trigger"] {
-  z-index: 100;
+  z-index: 10;
 }
 
 .corona-modal {
@@ -299,9 +307,10 @@ ul + p {
 
 /*メニュー*/
 .menu__subTitle {
+  width: 30%;
   font-size: 2.5em;
   font-family: fantasy;
-  margin-left: 24px;
+  margin: 0 auto;
   padding: 50px;
   position: relative;
   text-align: center;
@@ -319,6 +328,11 @@ ul + p {
           transform: translateX(-50%);
 }
 
+.menu__area {
+  width: 85vw;
+  margin: 0 auto;
+}
+
 .menu__list li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,11 +347,12 @@ ul + p {
 }
 
 .menu__list__img {
-  width: 65%;
   height: auto;
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
   border-radius: 3px;
+  width: 45%;
+  height: auto;
+  padding: 1%;
+  background-color: #fff;
 }
 
 .menu__list__bread {
@@ -345,7 +360,8 @@ ul + p {
 }
 
 .menu__list__bread div {
-  padding: 25px 20px 0;
+  padding: 35px 30px;
+  width: 40%;
 }
 
 .menu__list__bread div p {
@@ -354,11 +370,13 @@ ul + p {
   font-size: 1.2rem;
   line-height: 1.5;
   letter-spacing: .2em;
+  margin: 0 15px;
 }
 
 .menu__list__title {
   font-size: 1.8rem;
   padding: 20px 0;
+  margin: 0 15px;
 }
 
 /*サービス*/
@@ -428,11 +446,12 @@ ul + p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
 }
 
 .address__subTitle {
   font-size: 1.8rem;
-  padding: 20px 0;
+  padding: 20px;
   letter-spacing: .2em;
   position: relative;
 }
@@ -443,7 +462,7 @@ ul + p {
   height: 2px;
   position: absolute;
   top: 90%;
-  left: 0;
+  left: 5%;
   border-bottom: 2px solid;
 }
 
@@ -504,6 +523,34 @@ ul + p {
   margin-top: 100px;
 }
 
+.contact__subTitle {
+  width: 30%;
+  font-size: 2.5em;
+  font-family: fantasy;
+  margin: 0 auto;
+  padding: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.contact__subTitle::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid;
+  width: 27px;
+  height: 2px;
+  left: 50%;
+  top: 70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact__item__label::after {
+  content: "*";
+  color: red;
+  margin: 0 3px;
+}
+
 .contact__item {
   font-size: 1.2rem;
   display: -webkit-box;
@@ -512,23 +559,26 @@ ul + p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 .contact__item dt {
-  padding: 5px 30px 30px 20px;
+  padding: 5px 30px 30px 0;
   letter-spacing: .2em;
 }
 
 .contact__item dd input {
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
   border: 1px solid #333;
+  width: 70%;
 }
 
 .contact__item dd textarea {
   border-radius: 5px;
   border: 1px solid #333;
   margin-bottom: 100px;
+  width: 70%;
 }
 
 .container {
@@ -546,9 +596,7 @@ ul + p {
   }
   /*ヘッダー*/
   .header__logo {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
+    display: none;
   }
   .header__title {
     display: none;
@@ -565,17 +613,17 @@ ul + p {
   }
   span.hamburger__icon {
     display: inline-block;
-    width: 35px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
   }
   span.hamburger__icon i {
     position: absolute;
     width: 100%;
-    height: 2px;
-    background-color: #fff;
+    height: 4px;
+    background-color: #000;
     display: block;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   span.hamburger__icon i:nth-child(1) {
     top: 0;
@@ -620,7 +668,7 @@ ul + p {
   .header__navi {
     position: fixed;
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(214, 34, 34, 0.7);
     top: 50px;
     right: 0;
     -webkit-transform: translateX(100%);
@@ -628,8 +676,8 @@ ul + p {
     bottom: 0;
     left: 0;
     z-index: -1;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all 3s ease-out;
+    transition: all 3s ease-out;
   }
   .header__navi__wrap {
     width: 100%;
@@ -699,9 +747,13 @@ ul + p {
   .commit__subTitle {
     font-size: 1.8rem;
     margin: 0 auto;
+    padding: 25px;
+    line-height: 1.3;
   }
   .commit__subTitle::after {
-    left: 8%;
+    left: 12%;
+    width: 20px;
+    top: 80%;
   }
   .commit__text {
     margin: 0 5px 20px 30px;
@@ -712,24 +764,34 @@ ul + p {
     margin: 0 auto;
   }
   [data-modal="trigger"] {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   /*メニュー*/
   .menu__cat {
-    margin-top: 150px;
+    width: 700px;
+    margin: 160px auto 0;
   }
   .menu__subTitle {
+    width: 30%;
+    text-align: center;
     font-size: 1.8rem;
-    margin-left: 0px;
+    margin: 0 auto;
   }
   .menu__list li {
     display: block;
   }
   .menu__list__img {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #fff;
   }
   .menu__list__title {
     font-size: 1.4rem;
+  }
+  .menu__list__bread div {
+    width: 70vw;
   }
   .menu__list__bread div p {
     font-size: 16px;
@@ -738,7 +800,7 @@ ul + p {
   /*サービス*/
   .service__cat {
     width: 700px;
-    margin: 160px auto 0;
+    margin: 120px auto 0;
   }
   .subTitle {
     font-size: 1.8rem;
@@ -770,6 +832,7 @@ ul + p {
   .address__cat {
     width: 700px;
     margin: 170px auto 0;
+    background-color: #fff;
   }
   .address__info {
     padding: 3%;
@@ -795,6 +858,11 @@ ul + p {
   }
   .address__subTitle {
     font-size: 1.2rem;
+    padding: 10px;
+  }
+  .address__subTitle::after {
+    width: 13px;
+    left: 3.5%;
   }
   .address__info__img {
     width: 50%;
@@ -804,6 +872,9 @@ ul + p {
   /*お問い合わせ*/
   .contact__cat {
     margin-top: 130px;
+  }
+  .contact__subTitle {
+    font-size: 1.8rem;
   }
   .contact__item {
     display: -webkit-box;
@@ -830,31 +901,25 @@ ul + p {
   }
 }
 
-.contact__item--red {
-  color: red;
-  margin-left: 10px;
-  font-size: 20px;
-  vertical-align: middle;
-}
-
-.contact__btn {
-  text-align: center;
-  margin: 0 auto;
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 110px;
+  height: 35px;
+  border-radius: 15px;
   display: block;
+  margin: -40px auto 0;
 }
 
-.contact__btn span {
-  margin: 30px;
-  font-size: 1.8rem;
-  border-radius: 5px;
-  letter-spacing: 5px;
-  text-align: center;
+.btn {
+  font-size: 16px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 768px) {
-  .contact__btn span {
-    font-size: 1.2rem;
-    border-radius: 5px;
+  button {
+    margin: 0 auto 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
