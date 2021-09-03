@@ -5,9 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web sample cafe</title>
-  <link rel="stylesheet" href="./style.css">
 </head>
-
+<link rel="stylesheet" href="./assets/css/style.css">
 <body>
   <!--ヘッダー-->
   <header class="header">
@@ -50,7 +49,7 @@
                 当店では、原料にこだわりブラジル産のコーヒー豆を使用しています。<br>
                 口に入れた瞬間に鼻から抜けていく香りと、スッキリとした後味が特徴の一杯です。
           </p>
-          <img class="commit__img" src="./m-1.jpg" alt="commit">
+          <img class="commit__img" src="./assets/img/m-1.jpg" alt="commit">
           
           <!--コロナのお知らせ-->
           <input class="modal-checkbox" type="checkbox" id="modalBox">
@@ -77,34 +76,34 @@
   <!--メニュー-->
   <section class="container">
     <main class="menu">
-      <div class="l-inner">
+      <div class="menu-wrap">
         <div class="menu__cat">
           <h2 class="menu__subTitle"><a id="menu-link">メニュー</a></h2>
           <div class="menu__area">
             <ul class="menu__list">
               <li class="menu__list__bread">
-                <img class="menu__list__img" src="./m-5.jpg" alt="">
+                <img class="menu__list__img" src="./assets/img/m-5.jpg" alt="">
                 <div>
                   <h3 class="menu__list__title">クロワッサン</h3>
                   <p class="menu__list__text">当店の人気メニューです。自家製のバターをたっぷりと使用した一品で、食べる直前に温めることでバターの香りが楽しめます。</p>
                 </div>
               </li>
               <li class="menu__list__bread">
-                <img class="menu__list__img" src="./m-4.jpg" alt="">
+                <img class="menu__list__img" src="./assets/img/m-4.jpg" alt="">
                 <div>
                   <h3 class="menu__list__title">ドーナッツ</h3>
                   <p class="menu__list__text">もちもちの生地と、毎朝手作りのクリームが自慢のドーナッツです。</p>
                 </div>
               </li>
               <li class="menu__list__bread">
-                <img class="menu__list__img" src="./m-3.jpg" alt="bled">
+                <img class="menu__list__img" src="./assets/img/m-3.jpg" alt="bled">
                 <div>
                   <h3 class="menu__list__title">いちごサンド</h3>
                   <p class="menu__list__text">クロワッサン生地にたっぷりのイチゴと生クリームを使ったいちごサンドは、一度食べたらくせになる一品です。</p>
                 </div>
               </li>
               <li class="menu__list__bread">
-                <img class="menu__list__img" src="./m-2.jpg" alt="coffee">
+                <img class="menu__list__img" src="./assets/img/m-2.jpg" alt="coffee">
                 <div>
                   <h3 class="menu__list__title">Black flowing ice</h3>
                   <p class="menu__list__text">グラスに入れたバニラアイスに、当店自慢のコーヒーをそそぐ大人のデザート。アイスの甘味とコーヒーの苦味を堪能できる一品です。</p>
@@ -123,7 +122,7 @@
       <div class="service__cat">
         <h2 class="subTitle"><a id="service-link">サービス</a></h2>
         <div class="service__info">
-          <img class="service__info__img" src="./service.jpg" alt="service">
+          <img class="service__info__img" src="./assets/img/service.jpg" alt="service">
           <div class="service__info__text">
             <p>
               サービスの一環として、当店ではコワーキングスペースとしての貸し出しサービスを行なっています。<br>
@@ -170,7 +169,7 @@
                 </dl>
               </div>
             </div>
-            <img class="address__info__img" src="./access.jpg" alt="">
+            <img class="address__info__img" src="./assets/img/access.jpg" alt="">
           </div>
         </div>
       </div>
@@ -182,19 +181,19 @@
     <main class="contact">
       <div class="l-inner">
         <div class="contact__cat">
-          <h2 class="subTitle"><a id="contact-link">お問い合わせ</a></h2>
+          <h2 class="contact__subTitle"><a id="contact-link">お問い合わせ</a></h2>
           <form action="#" method="POST">
             <div class="contact__area">
               <dl class="contact__item">
-                <dt class="contact__item__label"><label for="name" class="contact__label">お名前<span class="contact__item--red">*</span></label></dt>
+                <dt class="contact__item__label"><label for="name" class="contact__label">お名前</label></dt>
                 <dd class="contact__item__input"><input type="text" id="name" value="" size="110" placeholder="おなまえ"></dd>
               </dl>
               <dl class="contact__item">
-                <dt class="contact__item__label"><label for="tel" class="contact__label">お電話番号<span class="contact__item--red">*</span></label></dt>
+                <dt class="contact__item__label"><label for="tel" class="contact__label">お電話番号</label></dt>
                 <dd class="contact__item__input"><input type="text" id="tel" value="" size="110" placeholder="〇〇ー〇〇〇〇"></dd>
               </dl>
               <dl class="contact__item">
-                <dt class="contact__item__label"><label for="email" class="contact__label">メールアドレス<span class="contact__item--red">*</span></label></dt>
+                <dt class="contact__item__label"><label for="email" class="contact__label">メールアドレス</label></dt>
                 <dd class="contact__item__input"><input type="text" id="email" value="" size="110" placeholder="〇〇@〇〇.com"></dd>
               </dl>
               <dl class="contact__item">
@@ -205,8 +204,8 @@
           </form>
 
           <!--ボタン-->
-          <button class="contact__btn" type="submit" name="name" value="名前" >
-            <span>送信</span>
+          <button  type="submit" name="name" value="名前" >
+            <a href="" class="btn">送　信</a>
           </button>
         </div>
       </div>
@@ -217,9 +216,9 @@
   <footer class="container">
     <div class="footer__cat">
       <ul class="fotter__list">
-        <li><a href="#"><img class="footer__list__item" src="./face.jpeg" alt="facebook"></a></li>
-        <li><a href="#"><img class="footer__list__item" src="./twii.jpeg" alt="Twitter"></a></li>
-        <li><a href="#"><img class="footer__list__item" src="./yt.jpeg" alt="YouTube"></a></li>
+        <li><a href="#"><img class="footer__list__item" src="./assets/img/face.jpeg" alt="facebook"></a></li>
+        <li><a href="#"><img class="footer__list__item" src="./assets/img/twii.jpeg" alt="Twitter"></a></li>
+        <li><a href="#"><img class="footer__list__item" src="./assets/img/yt.jpeg" alt="YouTube"></a></li>
       </ul>
       <p><small>&copy;2021 All Rights Reserved</small></p>
     </div>
