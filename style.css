@@ -139,7 +139,7 @@ ul + p {
 }
 
 .header__logo {
-  background: url(../../assets/img/コーヒーブレイクアイコン.jpeg);
+  background: url(./コーヒーブレイクアイコン.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 45px;
